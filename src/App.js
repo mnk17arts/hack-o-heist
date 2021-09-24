@@ -1,9 +1,11 @@
 import './App.css';
+import About from './Components/About/About';
+
 
 function App() {
   return (
     <div className="App">
-    Hack O Heist
+    <About/>
     </div>
   );
 }

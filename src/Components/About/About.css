@@ -1,0 +1,253 @@
+.back{
+  background-image: "spot3.png";
+  background-color: #2A3034;
+  min-height: 100vh;
+  max-height: max-content;
+  
+  
+}
+.clear{
+  clear: both;
+}
+
+  .layer{
+    width: 100vw;
+    
+  }
+  /* .items{
+    display: block;
+    align-self: center;
+    margin-left: 50%;
+  } */
+  .maskPhoto{
+    /* position: absolute; */
+    height:60vh;
+   
+    margin-left: 8%;
+
+    
+    top: 320px;
+    float: left;
+    opacity: 50%;
+    
+    /* border-radius: 265px; */
+  }
+  .material{
+
+    color: antiquewhite;
+    margin-left: 0%;
+    margin-top: 3.5%;
+    display: block;
+  
+    /* align-items: center; */
+    font-family: Poppins;
+    text-align: start;
+    font-style: normal;
+    font-weight: normal;
+    flex-wrap: wrap;
+   /* width: 400px; */
+    /* align-content: flex-start; */
+    /* font-size: 24px; */
+    /* width: 700px; */
+    line-height: 25px;
+    margin-left: 20%;
+    color: #FFFFFF;
+    float: left;
+  }
+  .headingAbout{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Purple Purse;
+    font-size: 3.5rem;
+    line-height: 75px;
+    text-shadow: 25px 15px 4px #000000;
+    margin-top: 2%;
+    
+    /* align-items: center; */
+  }
+.containerAbout{
+    display: block;
+    text-align: center;
+    width: 50%;
+    float: right;
+    margin-right: 8%;
+    
+
+}
+@media (max-width: 1000px){
+    .maskPhoto{
+        
+        width: 90vw;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        top: 320px;
+        float: left;
+        opacity: 50%;
+       
+      }
+    .containerAbout{
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        float: none;
+        display: inline;
+        margin-right: 8%;
+    }
+    .material{
+        width: auto;
+      color: antiquewhite;
+      
+      margin-top: 3.5%;
+    
+    
+      font-family: Poppins;
+   
+      font-style: normal;
+      font-weight: normal;
+      flex-wrap: wrap;
+     
+     
+      align-content: center;
+      line-height: 25px;
+      
+      color: #FFFFFF;
+      float: left;
+    }
+    .headingAbout{
+        color: #FFFFFF;
+        font-style: normal;
+     
+        font-weight: normal;
+        font-family: Purple Purse;
+        font-size: 3.5rem;
+        line-height: 75px;
+        text-shadow: 25px 15px 4px #000000;
+        margin-top: 2%;
+        
+        
+      }
+    
+}
+@media (max-width: 1000px){
+    .maskPhoto{
+       
+        height: auto;
+        
+       display: block;
+       margin: auto;
+        top: 320px;
+       
+        opacity: 50%;
+        align-items: center;
+        overflow: hidden;
+        text-align: center;
+       
+      }
+      .material{
+        width: auto;
+      color: antiquewhite;
+      
+      margin-top: 3.5%;
+    
+    
+      font-family: Poppins;
+   
+      font-style: normal;
+      font-weight: normal;
+      flex-wrap: wrap;
+     
+     
+      align-content: center;
+      line-height: 25px;
+      
+      color: #FFFFFF;
+      float: left;
+    }
+      .headingAbout{
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: normal;
+        font-family: Purple Purse;
+        font-size: 2.5rem;
+        line-height: 75px;
+        text-shadow: 25px 15px 4px #000000;
+        margin-top: 2%;
+        width: auto;
+        
+        
+        
+      }
+      .containerAbout{
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        float: unset;
+        display: block;
+        margin: auto;
+    }
+
+
+  
+}
+@media (max-width: 1266px){
+  .maskPhoto{
+       
+    height: auto;
+    margin: auto;
+   display: flexbox;
+   flex-direction: unset;
+    top: 320px;
+   
+    opacity: 50%;
+    align-items: center;
+    overflow: hidden;
+    
+   
+  }
+  .material{
+    width: auto;
+  color: antiquewhite;
+  
+  margin-top: 3.5%;
+margin: auto;
+
+  font-family: Poppins;
+
+  font-style: normal;
+  font-weight: normal;
+ display: grid;
+ 
+ 
+  align-content: center;
+  line-height: 25px;
+  
+  color: #FFFFFF;
+  float: left;
+}
+  /* .headingAbout{
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+    font-family: Purple Purse;
+    font-size: 2rem;
+    line-height: 75px;
+    text-shadow: 25px 15px 4px #000000;
+    margin-top: 2%;
+    
+    
+    
+  }
+  .containerAbout{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    float: unset;
+    display: block;
+    margin: auto;
+} */
+
+
+}

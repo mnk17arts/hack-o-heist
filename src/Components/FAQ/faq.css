@@ -79,8 +79,10 @@
   width: 7vw;
   height: 7vw;
   position: absolute;
+  z-index: 1;
   border-radius: 50%;
-  background-image: radial-gradient(#fdfdfd38, #faf9f94d, #fffbfb2c);
+  background-image: radial-gradient(#fdfdfd1c, #faf9f91e, #fffbfb1a);
+  filter: blur(8px);
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-animation: bgCircle 10s infinite;

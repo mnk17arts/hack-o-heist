@@ -33,42 +33,35 @@ const faqQns = [
   {
     id: 2,
     q: "How to install remove.bg for Windows/Mac/Linux",
-    q: "How to install remove.bg for Windows/Mac/Linux",
     a: ["Remove.bg for Windows/Mac/Linux brings bulk image background removal right to your desktop.", "To install it, follow these steps : Windows Installation Instructions Download and run remove.bg for Windows.", " After a few seconds remove.bg for Windows will be installed and automatically started.", " The installation also adds shortcuts to your Desktop and Start Menu.", " To set up your API key and use remove.bg for Windows, follow the instructions in the application."]
   },
   {
     id: 2,
-    q: "How to install remove.bg for Windows/Mac/Linux",
     q: "How to install remove.bg for Windows/Mac/Linux",
     a: ["Remove.bg for Windows/Mac/Linux brings bulk image background removal right to your desktop.", "To install it, follow these steps : Windows Installation Instructions Download and run remove.bg for Windows.", " After a few seconds remove.bg for Windows will be installed and automatically started.", " The installation also adds shortcuts to your Desktop and Start Menu.", " To set up your API key and use remove.bg for Windows, follow the instructions in the application."]
   },
   {
     id: 3,
     q: "How to install remove.bg for Windows/Mac/Linux",
-    q: "How to install remove.bg for Windows/Mac/Linux",
     a: ["Remove.bg for Windows/Mac/Linux brings bulk image background removal right to your desktop.", "To install it, follow these steps : Windows Installation Instructions Download and run remove.bg for Windows.", " After a few seconds remove.bg for Windows will be installed and automatically started.", " The installation also adds shortcuts to your Desktop and Start Menu.", " To set up your API key and use remove.bg for Windows, follow the instructions in the application."]
   },
   {
     id: 4,
-    q: "How to install remove.bg for Windows/Mac/Linux",
     q: "How to install remove.bg for Windows/Mac/Linux",
     a: ["Remove.bg for Windows/Mac/Linux brings bulk image background removal right to your desktop.", "To install it, follow these steps : Windows Installation Instructions Download and run remove.bg for Windows.", " After a few seconds remove.bg for Windows will be installed and automatically started.", " The installation also adds shortcuts to your Desktop and Start Menu.", " To set up your API key and use remove.bg for Windows, follow the instructions in the application."]
   },
   {
     id: 5,
     q: "How to install remove.bg for Windows/Mac/Linux",
-    q: "How to install remove.bg for Windows/Mac/Linux",
     a: ["Remove.bg for Windows/Mac/Linux brings bulk image background removal right to your desktop.", "To install it, follow these steps : Windows Installation Instructions Download and run remove.bg for Windows.", " After a few seconds remove.bg for Windows will be installed and automatically started.", " The installation also adds shortcuts to your Desktop and Start Menu.", " To set up your API key and use remove.bg for Windows, follow the instructions in the application."]
   },
   {
     id: 6,
     q: "How to install remove.bg for Windows/Mac/Linux",
-    q: "How to install remove.bg for Windows/Mac/Linux",
     a: ["Remove.bg for Windows/Mac/Linux brings bulk image background removal right to your desktop.", "To install it, follow these steps : Windows Installation Instructions Download and run remove.bg for Windows.", " After a few seconds remove.bg for Windows will be installed and automatically started.", " The installation also adds shortcuts to your Desktop and Start Menu.", " To set up your API key and use remove.bg for Windows, follow the instructions in the application."]
   },
   {
     id: 7,
-    q: "How to install remove.bg for Windows/Mac/Linux",
     q: "How to install remove.bg for Windows/Mac/Linux",
     a: ["Remove.bg for Windows/Mac/Linux brings bulk image background removal right to your desktop.", "To install it, follow these steps : Windows Installation Instructions Download and run remove.bg for Windows.", " After a few seconds remove.bg for Windows will be installed and automatically started.", " The installation also adds shortcuts to your Desktop and Start Menu.", " To set up your API key and use remove.bg for Windows, follow the instructions in the application."]
   },
@@ -76,18 +69,18 @@ const faqQns = [
 const Faq = () => {
 
   const [qid, setQid] = useState(0);
-  const [ansFlag, setAnsFlag] = useState(true);
+  const [ansFlag, setAnsFlag] = useState(false);
   const [proFlag, setProFlag] = useState(true);
   return (
     <div className="faq_parent">
-      {bgCirclePos.map((obj, i) => {
+      
+      <div className="faq_blur_bg">{bgCirclePos.map((obj, i) => {
         return (
           <div className="faq_bg_circle" style={{ left: obj[0], top: obj[1] }}></div>
         )
-      })}
-      <div className="faq_blur_bg"></div>
+      })}</div>
       <div className="faq_me">
-        <div className="faq_heading">
+        <div className="faq_heading">  
           <h1> FAQs </h1>
         </div>
         <div className="faq_container">

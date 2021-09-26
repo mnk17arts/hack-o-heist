@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 40px;
+    margin: 0;
+}
+.logo{
+    width: 100px;
+    object-fit: contain;
+}
+.list ul{
+    display: flex;
+}
+.list ul li{
+    padding: 0px 30px;
+    font-size: bold;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+}
+.list ul li span{
+    transition: 0.3s;
+    color: black;
+}
+.list ul li span.borderRed{
+    border-bottom:  3px solid red !important;
+}

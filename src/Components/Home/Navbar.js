@@ -20,7 +20,6 @@ export default function Navbar() {
         <div>
             <nav className="navbar">
             <img src={ logo } alt="logo" className="logo" />
-            <img src="./" alt="" srcset="" />
 
             <div className="list">
             <ul>

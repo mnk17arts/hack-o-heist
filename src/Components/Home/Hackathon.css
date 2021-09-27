@@ -1,0 +1,23 @@
+.hackathon{
+    display: inline-flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: max-content;
+    padding: 10px 47px;
+    width: min-content;
+}
+.hackathon div{
+    gap: 10px;
+    margin: 0;
+    display: inline-block;
+    font-family: Poppins 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(164, 164, 164, 1);
+    font-size: 2rem;
+    font-weight: 700;
+}
+@media (max-width: 768px) {
+    .hackathon{
+        display: none;
+    }
+}

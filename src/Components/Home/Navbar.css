@@ -1,0 +1,77 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 40px;
+    margin: 0;
+    margin-top: 10px;
+}
+.logo{
+    width: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 10px whitesmoke);
+}
+.list ul{
+    display: flex;
+}
+.list ul li{
+    padding: 0px 30px;
+    font-size: bold;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+}
+.list ul li a{
+    text-decoration: none;
+    list-style: none;
+}
+.list ul li span{
+    padding: 2px;
+    font-size: 1.2 rem;
+    color: white;
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+.list ul li span.borderRed{
+    border-bottom:  3px solid red !important;
+    filter: drop-shadow(0px 0px 10px whitesmoke);
+    transition: all 300ms ease-in-out;
+}
+@media (max-width: 768px) {
+    .navbar{
+        padding: 7px 0px;
+        flex-direction: column;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .list ul li{
+        padding: 0px;
+    }
+    .list{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .list ul{
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* .list ul li span.borderRed .list ul li a::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    background-color: red;
+    transform: scaleX(0);
+}
+.list ul li span.borderRed .list ul li a:hover::before,
+.list ul li span.borderRed .list ul li a:focus::before{
+    transform: scaleX(1);
+} */

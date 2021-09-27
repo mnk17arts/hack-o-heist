@@ -1,0 +1,59 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: max-content;
+    overflow-y: hidden;
+    position: relative;
+    color: white;
+    background-image: url("./img/Group\ 33007.png");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: Poppins, sans-serif;
+    background-color: #2A3034;
+}
+.home .home__content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+.home__content-left, .home__content-right{
+    flex-basis: 0;
+}
+.home__content-middle{
+    flex-grow: 1;
+    align-self: flex-end;
+}
+.home__content-middle h3{
+    font-size: 30px;
+}
+.home__content-middle h2{
+    font-size: 50px;
+}
+.home  > img{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.5;
+}
+@media (max-width: 768px) {
+    .home{
+        height: 50vh;
+    }
+    .home__content-middle h3{
+        font-size: 20px;
+    }
+    .home__content-middle h2{
+        font-size: 35px;
+    }
+    .home__content-middle{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: fit-content;
+        transform: translateX(-50%);
+    }
+}

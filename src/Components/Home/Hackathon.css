@@ -12,7 +12,12 @@
     margin: 0;
     display: inline-block;
     font-family: Poppins 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #2A3034;
+    color:rgba(164, 164, 164, 1);
     font-size: 2rem;
     font-weight: 700;
+}
+@media (max-width: 768px) {
+    .hackathon{
+        display: none;
+    }
 }

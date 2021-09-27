@@ -39,3 +39,21 @@
     object-fit: cover;
     opacity: 0.5;
 }
+@media (max-width: 768px) {
+    .home{
+        height: 50vh;
+    }
+    .home__content-middle h3{
+        font-size: 20px;
+    }
+    .home__content-middle h2{
+        font-size: 35px;
+    }
+    .home__content-middle{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: fit-content;
+        transform: translateX(-50%);
+    }
+}

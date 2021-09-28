@@ -79,7 +79,19 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
+  .Trackx {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    background-image: none;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px 0;
+  }
+
   .Trackx .track_box .box_body {
     flex-direction: column;
     align-items: center;

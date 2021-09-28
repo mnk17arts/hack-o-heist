@@ -17,6 +17,7 @@
   top: 320px;
   float: left;
   opacity: 50%;
+  object-fit: contain;
 }
 .material {
   color: antiquewhite;
@@ -55,6 +56,52 @@
   /* width: 50%;
   float: right;
   margin-right: 8%; */
+}
+
+@media (max-width: 1024px) {
+  .maskPhoto {
+    width: 80vw;
+    margin-left: 0;
+    float: center;
+    opacity: 50%;
+  }
+  .material {
+    color: antiquewhite;
+    margin-top: 3.5%;
+    display: block;
+    font-family: Poppins;
+    text-align: start;
+    font-style: normal;
+    font-weight: normal;
+    flex-wrap: wrap;
+    line-height: 25px;
+    margin-left: 0;
+    color: #ffffff;
+    float: left;
+    padding-bottom: 30px;
+  }
+
+  .headingAbout {
+    border-bottom: 5px solid #e60909;
+    font-family: PurplePurse;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 2.3em;
+    color: #ffffff;
+    max-width: max-content;
+    text-shadow: 0.4rem 1rem 0.1rem rgba(0, 0, 0, 0.25);
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .containerAbout {
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    float: unset;
+    display: block;
+    margin: auto;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 768px) {

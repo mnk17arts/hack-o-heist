@@ -4,13 +4,17 @@ import Home from "./Components/Home/Home";
 import Schedule from "./Components/Schedule/Schedule";
 import Faq from "./Components/FAQ/Faq";
 import Tracks from "./Components/Tracks/Track";
+import Prizes from "./Components/Prizes/Prizes";
+import Sponsors from "./Components/Sponsors/Sponsor";
 function App() {
   return (
     <div className="App">
       <Home />
       <Tracks />
       <About />
+      <Prizes/>
       <Schedule />
+      <Sponsors/>
       <Faq />
     </div>
   );

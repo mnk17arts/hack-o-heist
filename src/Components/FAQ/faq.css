@@ -2,29 +2,29 @@
 @-webkit-keyframes bgCircle {
   from {
     -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    transform: scale(0.1);
   }
   50% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   to {
     -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    transform: scale(0.1);
   }
 }
 @keyframes bgCircle {
   from {
     -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    transform: scale(0.1);
   }
   50% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   to {
     -webkit-transform: scale(0.1);
-            transform: scale(0.1);
+    transform: scale(0.1);
   }
 }
 
@@ -32,7 +32,9 @@
   0% {
     right: 0px;
   }
-  25%, 50%, 75% {
+  25%,
+  50%,
+  75% {
     right: 10px;
   }
   100% {
@@ -44,7 +46,9 @@
   0% {
     right: 0px;
   }
-  25%, 50%, 75% {
+  25%,
+  50%,
+  75% {
     right: 10px;
   }
   100% {
@@ -53,7 +57,7 @@
 }
 
 .faq_parent {
-  background: #0e0e0e;
+  background: #000;
   min-height: 100vh;
   color: #ccc;
   z-index: 0;
@@ -68,11 +72,11 @@
 }
 
 .faq_parent ::-webkit-scrollbar-thumb {
-  background: #df4040;
+  background: #e60909;
 }
 
 .faq_parent ::-webkit-scrollbar-thumb:hover {
-  background: #df4004;
+  background: #e60909;
 }
 
 .faq_parent .faq_bg_circle {
@@ -84,11 +88,11 @@
   background-image: radial-gradient(#fdfdfd1c, #faf9f91e, #fffbfb1a);
   filter: blur(8px);
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-animation: bgCircle 10s infinite;
-          animation: bgCircle 10s infinite;
+  animation: bgCircle 10s infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .faq_parent .faq_blur_bg {
@@ -96,7 +100,7 @@
   width: 100%;
   height: 100%;
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   z-index: 2;
 }
 
@@ -110,18 +114,24 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 10px;
 }
 
 .faq_parent .faq_me .faq_heading {
   margin: 3% 0;
-  font-family: Purple Purse;
-  text-shadow: 7px 7px 3px #000;
+  border-bottom: 5px solid #e60909;
+  font-family: PurplePurse;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 3.2em;
+  line-height: 90px;
+  color: #ffffff;
+  text-shadow: 0.4rem 1rem 0.1rem rgba(0, 0, 0, 0.25);
 }
 
 .faq_parent .faq_me .faq_container {
@@ -132,16 +142,17 @@
   background-color: rgba(26, 31, 34, 0.8);
   border: 1px solid #444444;
   -webkit-box-shadow: 20px 20px 20px #0c0c0c;
-          box-shadow: 20px 20px 20px #0c0c0c;
+  box-shadow: 20px 20px 20px #0c0c0c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.faq_parent .faq_me .faq_container .faq_qns, .faq_parent .faq_me .faq_container .faq_not_qns {
+.faq_parent .faq_me .faq_container .faq_qns,
+.faq_parent .faq_me .faq_container .faq_not_qns {
   height: 100%;
   width: 50%;
 }
@@ -154,10 +165,10 @@
 .faq_parent .faq_me .faq_container .faq_qns .faq_q {
   width: 100%;
   font-family: sans-serif;
-  border: 1px solid #df0404;
-  background-color: #df04040e;
+  border: 1px solid #e60909;
+  background-color: #000;
   border-radius: 10px;
-  padding: 5px;
+  padding: 15px;
   margin-top: 10px;
   cursor: pointer;
   -webkit-transition: 0.5s;
@@ -166,12 +177,10 @@
 
 .faq_parent .faq_me .faq_container .faq_qns .faq_q:hover {
   -webkit-transform: translateX(10px);
-          transform: translateX(10px);
-  background-color: #07070734;
-  border-color: #ccc;
-  color: #f33535;
+  transform: translateX(10px);
+  background-color: #000;
   -webkit-box-shadow: -5px -5px 15px #000;
-          box-shadow: -5px -5px 15px #000;
+  box-shadow: -5px -5px 15px #000;
 }
 
 .faq_parent .faq_me .faq_container .faq_qns .faq_q:hover::before {
@@ -184,8 +193,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .faq_parent .faq_me .faq_container .faq_not_qns > img {
@@ -198,8 +207,16 @@
   height: 100%;
   top: 0;
   background: #23232371;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#0f0e0e71), to(#000000d0)), url("https://wallpaperaccess.com/full/2626507.jpg");
-  background-image: linear-gradient(0deg, #0f0e0e71, #000000d0), url("https://wallpaperaccess.com/full/2626507.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#0f0e0e71),
+      to(#000000d0)
+    ),
+    url("https://wallpaperaccess.com/full/2626507.jpg");
+  background-image: linear-gradient(0deg, #0f0e0e71, #000000d0),
+    url("https://wallpaperaccess.com/full/2626507.jpg");
   z-index: 100;
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -214,8 +231,16 @@
   overflow-y: auto;
   overflow-x: hidden;
   background: #0c130c;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#0f0e0e34), to(#00000046)), url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2tib2FyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
-  background-image: linear-gradient(0deg, #0f0e0e34, #00000046), url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2tib2FyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(#0f0e0e34),
+      to(#00000046)
+    ),
+    url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2tib2FyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-image: linear-gradient(0deg, #0f0e0e34, #00000046),
+    url("https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2tib2FyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
   z-index: 110;
   border: 10px solid #141414;
 }
@@ -225,14 +250,14 @@
   font-size: 2rem;
   text-align: left;
   margin-bottom: 20px;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great", cursive;
 }
 
 .faq_parent .faq_ans_screen .faq_ans_board .board_answer {
   padding: 20px;
   font-size: 1.3rem;
   text-align: left;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
 }
 
 .faq_parent .faq_ans_screen .faq_ans_board .board_answer > p {
@@ -257,9 +282,9 @@
   bottom: 10px;
   cursor: pointer;
   -webkit-animation: proToggle 2s infinite;
-          animation: proToggle 2s infinite;
+  animation: proToggle 2s infinite;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 @media screen and (max-width: 720px) {

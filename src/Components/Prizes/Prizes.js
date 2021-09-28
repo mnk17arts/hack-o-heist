@@ -5,7 +5,7 @@ import TopSVG from './Vector.svg'
 const Prizes = () => {
     return (
         <div className="Prizes">
-            <img src={TopSVG} alt=""/>
+            {/* <img src={TopSVG} alt=""/> */}
             <h1 className="h_name">Prizes</h1>
             <div className="PrizesContainer">
                 <div className="cont1">

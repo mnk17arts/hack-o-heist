@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './faq.css';
 import faqimg from './faqimg/faq.png'
 import professor from './faqimg/professor.png'
@@ -71,6 +71,10 @@ const Faq = () => {
   const [qid, setQid] = useState(0);
   const [ansFlag, setAnsFlag] = useState(false);
   const [proFlag, setProFlag] = useState(true);
+
+  useEffect(() => {
+    ansFlag ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset';
+ }, [ansFlag]);
   return (
     <div className="faq_parent">
       

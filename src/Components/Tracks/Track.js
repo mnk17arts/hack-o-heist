@@ -24,7 +24,7 @@ const Track = () => {
             <p>
               To drive the innovation in communication technology design devices
               that are potentially impactful . It's time to harness your energy
-              in expanding your innovative ideas in making smoother
+              and expanding your innovative ideas in making smoother
               communication channels more effectively.
             </p>
           </div>
@@ -33,7 +33,7 @@ const Track = () => {
               <img src={edu} className="edu" alt="edu" /> Agriculture
             </h2>
             <p>
-              With India’s expanding population, global climate change, and the
+              With India’s expanding population, global climate change and the
               current uncertain situation the future of agriculture holds the
               opportunities and power to reshape our lives. So build new, fast,
               and frugal solutions.
@@ -54,7 +54,7 @@ const Track = () => {
 
           <div className="box Defence">
             <h2 className="row-1">
-              <img src={healthcare} className="healthcare" alt="healthcare" />{" "}
+              <img src={healthcare} className="healthcare" alt="Defence" />{" "}
               Defence
             </h2>
             <p>

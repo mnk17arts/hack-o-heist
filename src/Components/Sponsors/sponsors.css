@@ -1,116 +1,140 @@
 @-webkit-keyframes simgx {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(1) rotate(0deg);
-            transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
     opacity: 1;
   }
-  20%, 80% {
+  20%,
+  80% {
     -webkit-transform: scale(1.05) rotate(45deg);
-            transform: scale(1.05) rotate(45deg);
+    transform: scale(1.05) rotate(45deg);
     opacity: 0.8;
   }
-  30%, 70% {
+  30%,
+  70% {
     -webkit-transform: scale(1.1) rotate(90deg);
-            transform: scale(1.1) rotate(90deg);
+    transform: scale(1.1) rotate(90deg);
     opacity: 0.6;
   }
-  40%, 60% {
+  40%,
+  60% {
     -webkit-transform: scale(1.14) rotate(135deg);
-            transform: scale(1.14) rotate(135deg);
+    transform: scale(1.14) rotate(135deg);
     opacity: 0.5;
   }
   50% {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
     opacity: 0.4;
   }
 }
 
 @keyframes simgx {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: scale(1) rotate(0deg);
-            transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
     opacity: 1;
   }
-  20%, 80% {
+  20%,
+  80% {
     -webkit-transform: scale(1.05) rotate(45deg);
-            transform: scale(1.05) rotate(45deg);
+    transform: scale(1.05) rotate(45deg);
     opacity: 0.8;
   }
-  30%, 70% {
+  30%,
+  70% {
     -webkit-transform: scale(1.1) rotate(90deg);
-            transform: scale(1.1) rotate(90deg);
+    transform: scale(1.1) rotate(90deg);
     opacity: 0.6;
   }
-  40%, 60% {
+  40%,
+  60% {
     -webkit-transform: scale(1.14) rotate(135deg);
-            transform: scale(1.14) rotate(135deg);
+    transform: scale(1.14) rotate(135deg);
     opacity: 0.5;
   }
   50% {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
     opacity: 0.4;
   }
 }
 
 @-webkit-keyframes danger_blinx {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     -webkit-box-shadow: 5px 5px 100px #f00;
-            box-shadow: 5px 5px 100px #f00;
+    box-shadow: 5px 5px 100px #f00;
   }
-  25%, 75% {
+  25%,
+  75% {
     -webkit-box-shadow: 5px 5px 10px #00000073, 0 30px 20px -10px #00000021;
-            box-shadow: 5px 5px 10px #00000073, 0 30px 20px -10px #00000021;
+    box-shadow: 5px 5px 10px #00000073, 0 30px 20px -10px #00000021;
   }
 }
 
 @keyframes danger_blinx {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     -webkit-box-shadow: 5px 5px 100px #f00;
-            box-shadow: 5px 5px 100px #f00;
+    box-shadow: 5px 5px 100px #f00;
   }
-  25%, 75% {
+  25%,
+  75% {
     -webkit-box-shadow: 5px 5px 10px #00000073, 0 30px 20px -10px #00000021;
-            box-shadow: 5px 5px 10px #00000073, 0 30px 20px -10px #00000021;
+    box-shadow: 5px 5px 10px #00000073, 0 30px 20px -10px #00000021;
   }
 }
 
 @-webkit-keyframes spox_move {
-  0%, 100%, 20%, 80% {
+  0%,
+  100%,
+  20%,
+  80% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
-  10%, 90% {
+  10%,
+  90% {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
-  33%, 67% {
+  33%,
+  67% {
     -webkit-transform: translateY(-10px) rotateY(0deg);
-            transform: translateY(-10px) rotateY(0deg);
+    transform: translateY(-10px) rotateY(0deg);
   }
   50% {
     -webkit-transform: translateY(-10px) rotateY(180deg);
-            transform: translateY(-10px) rotateY(180deg);
+    transform: translateY(-10px) rotateY(180deg);
   }
 }
 
 @keyframes spox_move {
-  0%, 100%, 20%, 80% {
+  0%,
+  100%,
+  20%,
+  80% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
-  10%, 90% {
+  10%,
+  90% {
     -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
-  33%, 67% {
+  33%,
+  67% {
     -webkit-transform: translateY(-10px) rotateY(0deg);
-            transform: translateY(-10px) rotateY(0deg);
+    transform: translateY(-10px) rotateY(0deg);
   }
   50% {
     -webkit-transform: translateY(-10px) rotateY(180deg);
-            transform: translateY(-10px) rotateY(180deg);
+    transform: translateY(-10px) rotateY(180deg);
   }
 }
 
@@ -125,11 +149,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 10px;
   border: 2px solid #ff3939;
   cursor: default;
@@ -147,9 +171,9 @@
   background: #ffffff;
   border-radius: 50%;
   -webkit-animation: spox_move 10s linear infinite;
-          animation: spox_move 10s linear infinite;
+  animation: spox_move 10s linear infinite;
   -webkit-box-shadow: 0px 20px 5px -10px #000;
-          box-shadow: 0px 20px 5px -10px #000;
+  box-shadow: 0px 20px 5px -10px #000;
 }
 
 .spox > .spox_logo > img {
@@ -158,7 +182,7 @@
 }
 
 .spox > .spox_name {
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   letter-spacing: 1px;
   font-size: 1.2rem;
   color: #ffffff;
@@ -168,52 +192,77 @@
 
 .sp_parent {
   background-color: #0e0e0e;
-  background-image: linear-gradient(45deg, #2a3034b4 50%, #ffffff2d, #ffffff71, #ffffff28, #2a3034b4 60%);
+  background-image: linear-gradient(
+    45deg,
+    #2a3034b4 50%,
+    #ffffff2d,
+    #ffffff71,
+    #ffffff28,
+    #2a3034b4 60%
+  );
   color: #fff;
   -webkit-animation: bgx 20s linear infinite;
-          animation: bgx 20s linear infinite;
+  animation: bgx 20s linear infinite;
   background-size: 400% 400%;
   border-top: 5px solid #ff4242a6;
   overflow: hidden;
 }
 
-.sp_parent .sp_me .sp_big_child, .sp_parent .sp_me .sp_small_child {
+.sp_parent .sp_me .sp_big_child,
+.sp_parent .sp_me .sp_small_child {
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   overflow: hidden;
 }
 
-.sp_parent .sp_me .sp_big_child .sp_name, .sp_parent .sp_me .sp_small_child .sp_name {
+.sp_parent .sp_me .sp_big_child .sp_name,
+.sp_parent .sp_me .sp_small_child .sp_name {
   font-size: 3.5rem;
   border-bottom: 5px solid #ff4242a6;
-  font-family: 'Teko', sans-serif;
+  font-family: "Teko", sans-serif;
   color: #fff;
   text-shadow: 5px 15px 5px #000000be;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
-.sp_parent .sp_me .sp_big_child > img, .sp_parent .sp_me .sp_small_child > img {
+.sp_parent .sp_me .sp_big_child > img,
+.sp_parent .sp_me .sp_small_child > img {
   -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
+  transform: translateY(-200%);
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 0.8;
 }
 
-.sp_parent .sp_me .sp_big_child:hover > img, .sp_parent .sp_me .sp_small_child:hover > img {
+.sp_parent .sp_me .sp_big_child:hover > img,
+.sp_parent .sp_me .sp_small_child:hover > img {
   -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .sp_parent .sp_me .sp_small_child {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #0e0e0e00), color-stop(#2a3034), color-stop(#2a3030d2), color-stop(67%, #0e0e0e));
-  background-image: linear-gradient(to bottom, #0e0e0e00 33%, #2a3034, #2a3030d2, #0e0e0e 67%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(33%, #0e0e0e00),
+    color-stop(#2a3034),
+    color-stop(#2a3030d2),
+    color-stop(67%, #0e0e0e)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    #0e0e0e00 33%,
+    #2a3034,
+    #2a3030d2,
+    #0e0e0e 67%
+  );
 }
 
 .sp_parent .sp_me .sp_child {
@@ -221,29 +270,26 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .sp_parent .sp_me .sp_child .sp_child_fav_bag {
   width: 90vw;
   max-width: 800px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #0000 #fff #fff #fff;
   border-radius: 0 0 5px 5px;
   -webkit-box-shadow: 5px 5px 50px #000;
-          box-shadow: 5px 5px 50px #000;
+  box-shadow: 5px 5px 50px #000;
   background: #0000;
 }
 
 .sp_parent .sp_me .sp_child .sp_child_fav_bag:hover {
   border-color: #0000 #ff4242a6 #ff4242a6 #ff4242a6;
   -webkit-animation: danger_blinx 0.6s linear infinite;
-          animation: danger_blinx 0.6s linear infinite;
+  animation: danger_blinx 0.6s linear infinite;
 }
 
 .sp_parent .sp_me .sp_child .sp_child_fav_bag .sp_child_fav_bag_zip_even {
@@ -252,7 +298,7 @@
   display: flex;
   padding: 20px;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .sp_parent .sp_me .sp_child .sp_child_fav_bag .sp_child_fav_bag_zip_odd {
@@ -261,14 +307,15 @@
   display: flex;
   padding: 20px;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 720px) {
-  .sp_parent .sp_me .sp_big_child, .sp_parent .sp_me .sp_small_child {
+  .sp_parent .sp_me .sp_big_child,
+  .sp_parent .sp_me .sp_small_child {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }

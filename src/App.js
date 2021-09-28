@@ -6,16 +6,18 @@ import Faq from "./Components/FAQ/Faq";
 import Tracks from "./Components/Tracks/Track";
 import Prizes from "./Components/Prizes/Prizes";
 import Sponsors from "./Components/Sponsors/Sponsor";
+import Navbar from "./Components/Home/Navbar";
 function App() {
   return (
     <div className="App">
-      <Home />
-      <About />
-      <Tracks />
+      <Navbar/>
+      <Home id="home" />
+      <About id="about" />
+      <Tracks id="tracks" />
       {/* <Prizes/> */}
-      <Schedule />
-      <Sponsors/>
-      <Faq />
+      <Schedule id="schedule"/>
+      <Sponsors id="sponsors"/>
+      <Faq id="faq" />
     </div>
   );
 }

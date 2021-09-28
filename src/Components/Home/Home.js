@@ -1,7 +1,7 @@
 import Hackathon from "./Hackathon";
 import Navbar from "./Navbar";
 import "./Home.css";
-import bgBottom from "./img/bgBottom.png";
+import bgBottom from "./img/layer.png";
 
 export default function Home() {
   return (

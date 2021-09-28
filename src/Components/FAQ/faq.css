@@ -149,6 +149,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .faq_parent .faq_me .faq_container .faq_qns,

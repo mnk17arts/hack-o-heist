@@ -17,7 +17,7 @@ const Track = () => {
           <p>Tracks</p>
         </div>
         <div className="box_body">
-          <div className="box Community">
+          <div className="box Communication">
             <h2 className="row-1">
               <img src={users} className="users" alt="right" /> Communication
             </h2>
@@ -28,7 +28,7 @@ const Track = () => {
               communication channels more effectively.
             </p>
           </div>
-          <div className="box Education">
+          <div className="box Agriculture">
             <h2 className="row-1">
               <img src={edu} className="edu" alt="edu" /> Agriculture
             </h2>
@@ -52,7 +52,7 @@ const Track = () => {
             </p>
           </div>
 
-          <div className="box Healthcare">
+          <div className="box Defence">
             <h2 className="row-1">
               <img src={healthcare} className="healthcare" alt="healthcare" />{" "}
               Defence

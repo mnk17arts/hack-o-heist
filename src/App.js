@@ -10,13 +10,13 @@ import Navbar from "./Components/Home/Navbar";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Home id="home" />
       <About id="about" />
       <Tracks id="tracks" />
       {/* <Prizes/> */}
-      <Schedule id="schedule"/>
-      <Sponsors id="sponsors"/>
+      <Schedule id="schedule" />
+      <Sponsors id="sponsors" />
       <Faq id="faq" />
     </div>
   );

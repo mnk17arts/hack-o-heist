@@ -2,6 +2,7 @@ import Hackathon from "./Hackathon";
 import Navbar from "./Navbar";
 import "./Home.css";
 import bgBottom from "./img/layer.png";
+import Timer from "../Timer/Timer";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <div className="home__content-middle">
           <h3>ROBOTICS CLUB NITP</h3>
           <h2>HACK O HEIST</h2>
-          <h3>COMING SOON</h3>
+          <Timer />
         </div>
 
         <div className="home__content-right">

@@ -1,0 +1,120 @@
+.Prizes {
+  min-height: 100vh;
+  position: relative;
+  background: url("../Prizes/Money-Heist-Mask-PNG-Image\ 3.svg");
+  background-color: #000;
+  background-position: center;
+}
+
+.Prizes img {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+.Prizes .h_name {
+  font-family: PurplePurse;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 3.2em;
+  line-height: 90px;
+  color: #ffffff;
+  text-shadow: 25px 15px 4px #ffffff4f;
+  padding-top: 50px;
+}
+
+.PrizesContainer {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.Prizes .PrizesContainer .cont1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../Prizes//award\ 2.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  margin: 50px;
+}
+.Prizes .PrizesContainer .cont2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("../Prizes//award\ 2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  padding: 50px;
+  margin: 50px;
+}
+
+.Prizes .PrizesContainer .cont2 p {
+  color: white;
+  transform: translateY(-120%) translateX(-5%);
+}
+.Prizes .PrizesContainer .cont1 p {
+  color: white;
+  transform: translateY(-35%) translateX(-5%);
+}
+
+@media (max-width: 768px) {
+  .Prizes {
+    min-height: fit-content;
+  }
+  .PrizesContainer {
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .Prizes .PrizesContainer .cont1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../Prizes//award\ 2.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 50px;
+    width: 100%;
+  }
+  .Prizes .PrizesContainer .cont2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background: url("../Prizes//award\ 2.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    padding: 50px;
+    margin: 50px;
+  }
+
+  .Prizes .PrizesContainer .cont2 p {
+    color: white;
+    transform: translateY(-120%) translateX(-5%);
+  }
+  .Prizes .PrizesContainer .cont1 p {
+    color: white;
+    transform: translateY(-35%) translateX(-5%);
+  }
+}

@@ -19,29 +19,62 @@ const Track = () => {
         <div className="box_body">
           <div className="box Community">
             <h2 className="row-1">
-              <img src={users} className="users" alt="right" /> Community
+              <img src={users} className="users" alt="right" /> Communication
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+            <p>
+              To drive the innovation in communication technology design devices
+              that are potentially impactful . It's time to harness your energy
+              in expanding your innovative ideas in making smoother
+              communication channels more effectively.
+            </p>
           </div>
           <div className="box Education">
             <h2 className="row-1">
-              <img src={edu} className="edu" alt="edu" /> Education
+              <img src={edu} className="edu" alt="edu" /> Agriculture
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+            <p>
+              With India’s expanding population, global climate change, and the
+              current uncertain situation the future of agriculture holds the
+              opportunities and power to reshape our lives. So build new, fast,
+              and frugal solutions.
+            </p>
           </div>
           <div className="box Healthcare">
             <h2 className="row-1">
               <img src={healthcare} className="healthcare" alt="healthcare" />{" "}
               Healthcare
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+            <p>
+              Today, we are faced with modern health challenges such as the
+              COVID-19 pandemic, mental health, obesity, cardiovascular diseases
+              and many more. It is the perfect opportunity for hackers to come
+              up with something that serves the health industry.
+            </p>
+          </div>
+
+          <div className="box Healthcare">
+            <h2 className="row-1">
+              <img src={healthcare} className="healthcare" alt="healthcare" />{" "}
+              Defence
+            </h2>
+            <p>
+              Today, we are faced with modern health challenges such as the
+              COVID-19 pandemic, mental health, obesity, cardiovascular diseases
+              and many more. It is the perfect opportunity for hackers to come
+              up with something that serves the health industry.
+            </p>
           </div>
 
           <div className="box Open">
             <h2 className="row-1">
               <img src={open} className="open" alt="open" /> Open Innovation
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisci</p>
+            <p>
+              Have ideas that do not fall into any of the above tracks? Worry
+              not. The best part is we encourage you to exercise your ideas and
+              develop technologies that address a problem, without any
+              restrictions.
+            </p>
           </div>
         </div>
       </div>

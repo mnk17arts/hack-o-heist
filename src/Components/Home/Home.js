@@ -6,10 +6,6 @@ import bgBottom from "./img/layer.png";
 export default function Home() {
   return (
     <div className="home">
-      <div className="navigation-menu">
-        <Navbar />
-      </div>
-
       <div className="home__content">
         <div className="home__content-left">
           <Hackathon />

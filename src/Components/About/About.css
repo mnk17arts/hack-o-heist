@@ -107,7 +107,6 @@
 @media (max-width: 768px) {
   .maskPhoto {
     width: 100vw;
-    margin-left: 0;
     float: right;
     opacity: 50%;
   }

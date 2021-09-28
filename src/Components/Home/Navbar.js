@@ -17,19 +17,18 @@ export default function Navbar() {
     const showBorder4 = () => {setBorder1(false); setBorder2(false); setBorder3(false); return setBorder4(true);}
 
     return (
-        <div>
-            <nav className="navbar">
+        <div className="navbar">
             <img src={ logo } alt="logo" className="logo" />
 
             <div className="list">
             <ul>
                 <li onClick={showBorder1} >
-                    <Link to="/">
+                    <Link to="#home">
                         <span className={border1 ? "borderRed" : ""}>Home</span>
                     </Link>
                 </li>
                 <li onClick={showBorder2}>
-                    <Link to="/">
+                    <Link to="#about">
                         <span className={border2 ? "borderRed" : ""}>Projects</span>
                     </Link>
                 </li>
@@ -45,7 +44,6 @@ export default function Navbar() {
                 </li>
             </ul>
         </div>
-    </nav>
         </div>
     )
 }

@@ -287,11 +287,16 @@
   animation-timing-function: ease-in-out;
 }
 
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
   .faq_parent .faq_me .faq_container .faq_qns {
     width: 100%;
   }
   .faq_parent .faq_me .faq_container .faq_not_qns {
     display: none;
+  }
+
+  .faq_container {
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
 }

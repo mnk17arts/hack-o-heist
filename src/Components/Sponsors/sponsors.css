@@ -248,24 +248,6 @@
   transform: translateY(0%);
 }
 
-.sp_parent .sp_me .sp_small_child {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(33%, #0e0e0e00),
-    color-stop(#2a3034),
-    color-stop(#2a3030d2),
-    color-stop(67%, #0e0e0e)
-  );
-  background-image: linear-gradient(
-    to bottom,
-    #0e0e0e00 33%,
-    #2a3034,
-    #2a3030d2,
-    #0e0e0e 67%
-  );
-}
 
 .sp_parent .sp_me .sp_child {
   display: -webkit-box;

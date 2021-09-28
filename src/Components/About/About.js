@@ -2,7 +2,6 @@ import React from "react";
 import "./About.css";
 import layer from "./layer.png";
 import pic from "./photo.png";
-//import spot from "./spot.png";
 
 const About = () => {
   return (
@@ -10,7 +9,7 @@ const About = () => {
       <img class="layer" src={layer} alt="layer" />
       <div className="containerAbout">
         <div>
-          <img className="maskPhoto" src={pic} alt="layer"></img>
+          <img className="maskPhoto" src={pic} alt=""/>
         </div>
         <div>
           <h2 className="headingAbout">ABOUT US</h2>

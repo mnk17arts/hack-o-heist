@@ -56,15 +56,21 @@
   color: #bf0404;
   text-shadow: 0.4rem 1rem 0.1rem rgba(255, 255, 255, 0.048);
 }
-.Trackx .track_box .box_body .Education,
-.Trackx .track_box .box_body .Community {
+.Trackx .track_box .box_body .Agriculture,
+.Trackx .track_box .box_body .Communication {
   border-bottom: 2px solid #abafb0;
   align-self: flex-end;
 }
 
 .Trackx .track_box .box_body .Healthcare,
-.Trackx .track_box .box_body .Community {
+.Trackx .track_box .box_body .Communication {
   border-right: 2px solid #abafb0;
+}
+
+.Trackx .track_box .box_body .Open {
+  align-self: flex-end;
+  border-top: 2px solid #abafb0;
+  margin: auto;
 }
 
 .Trackx .Tracks {
@@ -97,8 +103,8 @@
     align-items: center;
     flex-wrap: nowrap;
   }
-  .Trackx .track_box .box_body .Education,
-  .Trackx .track_box .box_body .Community {
+  .Trackx .track_box .box_body .Agriculture,
+  .Trackx .track_box .box_body .Communication {
     align-self: center;
   }
   .Trackx .track_box .box_body .box {

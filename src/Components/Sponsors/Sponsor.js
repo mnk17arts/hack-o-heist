@@ -74,9 +74,7 @@ const Sponsors = () => {
     <div className="sp_parent">
       <div className="sp_me">
         <div className="sp_big_child">
-          <img src={mask} alt="" style={{ width: "25%" }} />
           <div className="sp_name">SPONSORS</div>
-          <img src={mask} alt="" style={{ width: "25%" }} />
         </div>
         <div className="sp_child">
           <img src={mask} alt="" style={
@@ -86,7 +84,7 @@ const Sponsors = () => {
           <div className="sp_child_fav_bag" onMouseOver={() => { setSdanger(true) }} onMouseOut={() => { setSdanger(false) }} >
             {
               spox_data.map((_, i) => {
-                if (i == 0 || i % 3 == 0) {
+                if (i === 0 || i % 3 === 0) {
                   return (
                     <div className="sp_child_fav_bag_zip_even">
                       <Sponsor 
@@ -95,7 +93,7 @@ const Sponsors = () => {
                       s_info={spox_data[i].s_info} />
                     </div>
                   )
-                }else if(i%3 == 1){
+                }else if(i%3 === 1){
                   return (
                     <div className="sp_child_fav_bag_zip_odd">
                       <Sponsor 
@@ -120,9 +118,7 @@ const Sponsors = () => {
           } />
         </div>
         <div className="sp_big_child">
-          <img src={mask} alt="" style={{ width: "25%" }} />
           <div className="sp_name">COMMUNITY SPONSORS</div>
-          <img src={mask} alt="" style={{ width: "25%" }} />
         </div>
         <div className="sp_child">
           <img src={mask} alt="" style={
@@ -132,7 +128,7 @@ const Sponsors = () => {
           <div className="sp_child_fav_bag" onMouseOver={() => { setSdanger(true) }} onMouseOut={() => { setSdanger(false) }} >
           {
               spox_data.map((_, i) => {
-                if (i == 0 || i % 3 == 0) {
+                if (i === 0 || i % 3 === 0) {
                   return (
                     <div className="sp_child_fav_bag_zip_even">
                       <Sponsor 
@@ -141,7 +137,7 @@ const Sponsors = () => {
                       s_info={spox_data[i].s_info} />
                     </div>
                   )
-                }else if(i%3 == 1){
+                }else if(i%3 === 1){
                   return (
                     <div className="sp_child_fav_bag_zip_odd">
                       <Sponsor 

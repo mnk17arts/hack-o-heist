@@ -1,13 +1,11 @@
 import Hackathon from "./Hackathon";
-import Navbar from "./Navbar";
 import "./Home.css";
 import bgBottom from "./img/layer.png";
 import Timer from "../Timer/Timer";
 
 export default function Home() {
   return (
-    <div className="home">
-
+    <div className="home" id="home">
       <div className="home__content">
         <div className="home__content-left">
           <Hackathon />

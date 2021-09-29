@@ -34,7 +34,7 @@ const Schedule = () => {
             <Planx
               classx="planx left"
               head="28th Sept"
-              body="Registration for the Heiest begins!"
+              body="Registration for the Heist begins!"
             />
             <Planx
               classx="planx left right"

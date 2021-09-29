@@ -9,7 +9,7 @@ import Right from "./Right.png";
 
 const Track = () => {
   return (
-    <div className="Trackx">
+    <div className="Trackx" id="tracks">
       <img src={left} className="left" alt="left" />
       <img src={Right} className="Right" alt="right" />
       <div className="track_box">

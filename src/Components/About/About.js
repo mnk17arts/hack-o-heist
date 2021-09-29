@@ -9,23 +9,26 @@ const About = () => {
       <img class="layer" src={layer} alt="layer" />
       <div className="containerAbout">
         <div>
-          <img className="maskPhoto" src={pic} alt=""/>
+          <img className="maskPhoto" src={pic} alt="" />
         </div>
         <div>
           <h2 className="headingAbout">ABOUT US</h2>
           <div className="material">
-            Hacking Heist is a highly anticipated international hackathon
-            organized by many famous student communities all over the world
-            uniting together to produce a memorable event for talented students
-            who possess the skills of different domains. The event is a 36-hour
-            long with a theme based on Pirates. The participants come resembling
-            pirates and fight through the dangerous perils of the oceans which are
-            the different domains they will receive in the hackathon. The domains
-            come as waves and the pirates maneuvering their way to the treasure.
-            The top pirate takes the loot and in the same way, the top
-            participants will receive awards. The participant who successfully
-            travels through all the perils of the ocean(challenges) is termed as
-            the “King of the Ocean”.
+            Hack-O-Heist is a thrilling and action-packed hackathon, organised
+            by the Robotics Club NIT Patna. Hack-O-Heist is scheduled to be a 36
+            hours long event where participants have to choose one of the
+            provided themes and build a hack for the same. Ready to take this
+            challenge of 36-hours of hacking? Look upon the themes , come up
+            with hardware or software based solutions and showcase your
+            innovation skills. Read our rulebook{" "}
+            <a
+              href="https://drive.google.com/file/d/1JIFbI7p8YP-VV4qhCuCppCFt11_ETILl/view?usp=sharing"
+              target="_blank"
+              style={{ color: "rgba(177, 0, 0, 1)" }}
+              rel="noreferrer"
+            >
+              here.
+            </a>
           </div>
         </div>
       </div>

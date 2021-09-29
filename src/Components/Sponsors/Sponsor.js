@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./sponsors.css";
 import mask from "./spimg/mask.png";
-import aws from "./spimg/aws.png";
-import github from "./spimg/github.png";
-import linkedin from "./spimg/linkedin.png";
+
 import wolfram from "./spimg/wolfram.png";
 import jetbrains from "./spimg/jetbrains.png";
 import elastic from "./spimg/elastic.png";
 import gmc from "./spimg/gmc.png";
+import rtist_logo from "./spimg/rtist-logo.png";
 const spox_data = [
   {
     id: 1,
@@ -33,22 +32,12 @@ const spox_data = [
     s_logo: gmc,
     s_info: "SRH needs 68 runs in 58 balls to win",
   },
+];
+const spoc_data = [
   {
-    id: 5,
-    s_name: "Github",
-    s_logo: github,
-    s_info: "SRH needs 68 runs in 58 balls to win",
-  },
-  {
-    id: 6,
-    s_name: "linkedin",
-    s_logo: linkedin,
-    s_info: "SRH needs 68 runs in 58 balls to win",
-  },
-  {
-    id: 7,
-    s_name: "linkedin",
-    s_logo: linkedin,
+    id: 1,
+    s_name: "R-Tist NIT Jalandhar",
+    s_logo: rtist_logo,
     s_info: "SRH needs 68 runs in 58 balls to win",
   },
 ];
@@ -153,7 +142,7 @@ const Sponsors = () => {
           />
         </div>
         <div className="sp_big_child">
-          <div className="sp_name">COMMUNITY SPONSORS</div>
+          <div className="sp_name">COMMUNITY PARTNERS</div>
         </div>
         <div className="sp_child">
           <img
@@ -182,14 +171,14 @@ const Sponsors = () => {
               setSdanger(false);
             }}
           >
-            {spox_data.map((_, i) => {
+            {spoc_data.map((_, i) => {
               if (i === 0 || i % 3 === 0) {
                 return (
                   <div className="sp_child_fav_bag_zip_even">
                     <Sponsor
-                      imgurl={spox_data[i].s_logo}
-                      s_name={spox_data[i].s_name}
-                      s_info={spox_data[i].s_info}
+                      imgurl={spoc_data[i].s_logo}
+                      s_name={spoc_data[i].s_name}
+                      s_info={spoc_data[i].s_info}
                     />
                   </div>
                 );
@@ -197,14 +186,14 @@ const Sponsors = () => {
                 return (
                   <div className="sp_child_fav_bag_zip_odd">
                     <Sponsor
-                      imgurl={spox_data[i].s_logo}
-                      s_name={spox_data[i].s_name}
-                      s_info={spox_data[i].s_info}
+                      imgurl={spoc_data[i].s_logo}
+                      s_name={spoc_data[i].s_name}
+                      s_info={spoc_data[i].s_info}
                     />
                     <Sponsor
-                      imgurl={spox_data[i + 1].s_logo}
-                      s_name={spox_data[i + 1].s_name}
-                      s_info={spox_data[i + 1].s_info}
+                      imgurl={spoc_data[i + 1].s_logo}
+                      s_name={spoc_data[i + 1].s_name}
+                      s_info={spoc_data[i + 1].s_info}
                     />
                   </div>
                 );

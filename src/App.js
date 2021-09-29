@@ -14,7 +14,7 @@ function App() {
       <Home id="home" />
       <About id="about" />
       <Tracks id="tracks" />
-      {/* <Prizes/> */}
+      <Prizes/>
       <Schedule id="schedule" />
       <Sponsors id="sponsors" />
       <Faq id="faq" />

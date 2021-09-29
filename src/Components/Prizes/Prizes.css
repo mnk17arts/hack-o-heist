@@ -1,20 +1,8 @@
 .Prizes {
   min-height: 100vh;
   max-height: max-content;
-  position: relative;
-  background: url("../Prizes/Money-Heist-Mask-PNG-Image\ 3.svg");
   background-color: #000;
-  background-position: center;
   z-index: 0;
-}
-
-.Prizes img {
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 1;
 }
 
 .Prizes .h_name {
@@ -33,44 +21,20 @@
 .PrizesContainer {
   display: flex;
   flex-direction: row;
-  height: 90vh;
-  justify-content: center;
-  /* align-items: center; */
-}
-
-.Prizes .PrizesContainer .cont1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  justify-content: space-around;
   align-items: center;
-  background: url("../Prizes//award\ 2.svg");
-  background-size: cover;
+  background: url("../Prizes/Money-Heist-Mask-PNG-Image\ 3.svg");
+  background-color: #000;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: 50px;
-  margin: 50px;
-}
-.Prizes .PrizesContainer .cont2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  background: url("../Prizes//award\ 2.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
-  padding: 50px;
-  margin: 50px;
+  background-repeat: repeat-x;
 }
 
-.Prizes .PrizesContainer .cont2 p {
-  color: white;
-  transform: translateY(-120%) translateX(-5%);
-}
-.Prizes .PrizesContainer .cont1 p {
-  color: white;
-  transform: translateY(-35%) translateX(-5%);
+.Prizes .PrizesContainer .cont1 img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -78,44 +42,13 @@
     min-height: max-content;
   }
   .PrizesContainer {
-    display: flex;
-    flex-direction: row;
-    min-height: max-content;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* align-items: center; */
+    background-repeat: no-repeat;
+  }
+
+  .Prizes .PrizesContainer .cont1 img {
+    padding-left: 25px;
     width: 100vw;
+    height: 50vh;
+    object-fit: contain;
   }
-
-  .Prizes .PrizesContainer .cont1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-  }
-  .Prizes .PrizesContainer .cont2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    background: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-  }
-
-  /* .Prizes .PrizesContainer .cont2 p {
-    color: white;
-    transform: translateY(-120%) translateX(-5%);
-  }
-  .Prizes .PrizesContainer .cont1 p {
-    color: white;
-    transform: translateY(-35%) translateX(-5%);
-  } */
 }

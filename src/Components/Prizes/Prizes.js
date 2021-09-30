@@ -11,12 +11,14 @@ const Prizes = () => {
       {/* <img src={TopSVG} alt=""/> */}
       <h1 className="h_name">Prizes</h1>
       <div className="PrizesContainer">
+      <div className="cont1">
+          <img src={prize1} alt="" />
+        </div>
+        
         <div className="cont1">
           <img src={prize2} alt="" />
         </div>
-        <div className="cont1">
-          <img src={prize1} alt="" />
-        </div>
+        
         <div className="cont1">
           <img src={prize3} alt="" />
         </div>

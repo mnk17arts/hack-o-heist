@@ -72,11 +72,11 @@
 }
 
 .faq_parent ::-webkit-scrollbar-thumb {
-  background: #e60909;
+  background: var(--x-red);
 }
 
 .faq_parent ::-webkit-scrollbar-thumb:hover {
-  background: #e60909;
+  background: var(--x-red);
 }
 
 .faq_parent .faq_bg_circle {
@@ -124,11 +124,11 @@
 
 .faq_parent .faq_me .faq_heading {
   margin: 3% 0;
-  border-bottom: 5px solid #e60909;
+  border-bottom: 5px solid var(--x-red);
   font-family: PurplePurse;
   font-style: normal;
   font-weight: bolder;
-  font-size: 3.2em;
+  font-size: var(--x-heading-size);
   line-height: 90px;
   color: #ffffff;
   text-shadow: 0.4rem 1rem 0.1rem rgba(0, 0, 0, 0.25);
@@ -166,7 +166,7 @@
 .faq_parent .faq_me .faq_container .faq_qns .faq_q {
   width: 100%;
   font-family: sans-serif;
-  border: 1px solid #e60909;
+  border: 1px solid var(--x-red);
   background-color: #000;
   border-radius: 10px;
   padding: 15px;

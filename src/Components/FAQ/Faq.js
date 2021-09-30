@@ -77,17 +77,7 @@ const faqQns = [
       "There are many surprise sub-events and prizes too!",
     ],
   },
-  {
-    id: 7,
-    q: "How to install remove.bg for Windows/Mac/Linux",
-    a: [
-      "Remove.bg for Windows/Mac/Linux brings bulk image background removal right to your desktop.",
-      "To install it, follow these steps : Windows Installation Instructions Download and run remove.bg for Windows.",
-      " After a few seconds remove.bg for Windows will be installed and automatically started.",
-      " The installation also adds shortcuts to your Desktop and Start Menu.",
-      " To set up your API key and use remove.bg for Windows, follow the instructions in the application.",
-    ],
-  },
+  
 ];
 const Faq = () => {
   const [qid, setQid] = useState(0);

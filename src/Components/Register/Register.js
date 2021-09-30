@@ -39,8 +39,11 @@ function Register() {
                 <p className="Text">“If you’re struggling to “think outside the box” remember the box is self-imposed. Who says it has to be a box? Why not a bowl of petunias?” ― Ryan Lilly</p>
             </div>
 
-            <p className="Contact">  <h3>Contact Us</h3> <br/>
-             <li>Shivam Tyagi- 8102323657</li></p>
+            <p className="Contact">  
+                <h3>Contact Us</h3> <br/>
+                <li>Shivam Tyagi- 8102323657</li>
+                <li>Mohd Zubair - 8102499134</li>
+             </p>
 
 
 

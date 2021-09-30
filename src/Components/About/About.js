@@ -1,20 +1,24 @@
 import "./About.css";
-import React, {useEffect} from 'react'
+import React, { useEffect } from "react";
 import layer from "./layer.png";
 import pic from "./Money-Heist-Mask-PNG-Image 3.svg";
-import AOS from "aos"
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
   useEffect(() => {
     AOS.init({ duration: 1500 });
-  }, [])
+  }, []);
   return (
     <div className="back">
       <img class="layer" src={layer} alt="layer" />
       <div className="containerAbout">
-        <img className="maskPhoto" src={pic} alt=""/>
-        <div data-aos="fade-up-left" data-aos-offset="120" data-aos-anchor-placement="top">
+        <img className="maskPhoto" src={pic} alt="" />
+        <div
+          data-aos="fade-up-left"
+          data-aos-offset="120"
+          data-aos-anchor-placement="top"
+        >
           <h2 className="headingAbout">ABOUT US</h2>
           <div className="material">
             Hack-O-Heist is a thrilling and action-packed hackathon, organised

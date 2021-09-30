@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./track.css";
 import open from "./open.png";
 import healthcare from "./healthcare.png";
@@ -6,13 +6,13 @@ import users from "./users.png";
 import edu from "./edu.png";
 import left from "./left.png";
 import Right from "./Right.png";
-import AOS from "aos"
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Track = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
-  }, [])
+  }, []);
   return (
     <div className="Trackx" id="tracks">
       <img src={left} className="left" alt="left" />
@@ -63,10 +63,11 @@ const Track = () => {
               Defence
             </h2>
             <p data-aos="zoom-in">
-              Today, we are faced with modern health challenges such as the
-              COVID-19 pandemic, mental health, obesity, cardiovascular diseases
-              and many more. It is the perfect opportunity for hackers to come
-              up with something that serves the health industry.
+              Awareness of the operational situation, both for friendly and
+              hostile forces, is one of the most important parameters for the
+              successful conduct of a military operation and the current
+              practices with which it is achieved can be improved with ideas and
+              solutions belonging to a wide range of research areas.
             </p>
           </div>
 

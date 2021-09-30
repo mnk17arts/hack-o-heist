@@ -8,7 +8,7 @@
 .Nairobi {
   max-height: 65vh;
   position: absolute;
-  bottom: 40%;
+  bottom: 29%;
   right: 0;
   z-index: 1;
 }
@@ -115,7 +115,6 @@
     z-index: 1;
     /* opacity: 0.7; */
   }
-  
 
   /* .RClogo {
     width: 10px;
@@ -133,7 +132,6 @@
   } */
 }
 @media (max-width: 414 px) {
-
   .RClogo {
     width: 10px;
     left: 0;
@@ -150,4 +148,3 @@
     left: 0;
   }
 }
-

@@ -1,16 +1,14 @@
 import React from "react";
 import "./About.css";
 import layer from "./layer.png";
-import pic from "./photo.png";
+import pic from "./Money-Heist-Mask-PNG-Image 3.svg";
 
 const About = () => {
   return (
     <div className="back">
       <img class="layer" src={layer} alt="layer" />
       <div className="containerAbout">
-        <div>
-          <img className="maskPhoto" src={pic} alt="" />
-        </div>
+        <img className="maskPhoto" src={pic} alt=""/>
         <div>
           <h2 className="headingAbout">ABOUT US</h2>
           <div className="material">

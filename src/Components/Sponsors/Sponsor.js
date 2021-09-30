@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./sponsors.css";
 import mask from "./spimg/mask.png";
-
+import bitd from "./spimg/bitd.png";
 import wolfram from "./spimg/wolfram.png";
 import jetbrains from "./spimg/jetbrains.png";
 import elastic from "./spimg/elastic.png";
@@ -40,13 +40,33 @@ const spoc_data = [
     s_logo: rtist_logo,
     s_info: "SRH needs 68 runs in 58 balls to win",
   },
+  {
+    id: 2,
+    s_name: "IEEE BIT Deoghar",
+    s_logo: bitd,
+    s_info: "SRH needs 68 runs in 58 balls to win",
+  },
+  {
+    id: 2,
+    s_name: "IEEE BIT Deoghar",
+    s_logo: bitd,
+    s_info: "SRH needs 68 runs in 58 balls to win",
+  },
 ];
 
 const Sponsor = props => {
   return (
     <div className="spox">
       <div className="spox_logo">
-        <img src={props.imgurl} width="80px" alt={props.s_name} />
+        <img
+          style={{
+            backgroundColor:
+              props.s_name === "IEEE BIT Deoghar" ? "#00186F" : "transparent",
+          }}
+          src={props.imgurl}
+          width="80px"
+          alt={props.s_name}
+        />
       </div>
       <div className="spox_name">{props.s_name}</div>
       <div className="spox_info" hidden="true">
@@ -60,7 +80,15 @@ const Sponsors = () => {
   const [sdanger, setSdanger] = useState(false);
 
   return (
-    <div className="sp_parent">
+    <div
+      className="sp_parent"
+      onMouseOver={() => {
+        setSdanger(true);
+      }}
+      onMouseOut={() => {
+        setSdanger(false);
+      }}
+    >
       <div className="sp_me">
         <div className="sp_big_child">
           <div className="sp_name">SPONSORS</div>
@@ -83,15 +111,7 @@ const Sponsors = () => {
                   }
             }
           />
-          <div
-            className="sp_child_fav_bag"
-            onMouseOver={() => {
-              setSdanger(true);
-            }}
-            onMouseOut={() => {
-              setSdanger(false);
-            }}
-          >
+          <div className="sp_child_fav_bag">
             {spox_data.map((_, i) => {
               if (i === 0 || i % 3 === 0) {
                 return (
@@ -162,15 +182,7 @@ const Sponsors = () => {
                   }
             }
           />
-          <div
-            className="sp_child_fav_bag"
-            onMouseOver={() => {
-              setSdanger(true);
-            }}
-            onMouseOut={() => {
-              setSdanger(false);
-            }}
-          >
+          <div className="sp_child_fav_bag">
             {spoc_data.map((_, i) => {
               if (i === 0 || i % 3 === 0) {
                 return (

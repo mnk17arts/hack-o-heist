@@ -248,7 +248,6 @@
   transform: translateY(0%);
 }
 
-
 .sp_parent .sp_me .sp_child {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,8 +271,8 @@
 
 .sp_parent .sp_me .sp_child .sp_child_fav_bag:hover {
   border-color: #0000 #e60909 #e60909 #e60909;
-  -webkit-animation: danger_blinx 0.6s linear infinite;
-  animation: danger_blinx 0.6s linear infinite;
+  -webkit-animation: danger_blinx 2.6s linear infinite;
+  animation: danger_blinx 2.6s linear infinite;
 }
 
 .sp_parent .sp_me .sp_child .sp_child_fav_bag .sp_child_fav_bag_zip_even {

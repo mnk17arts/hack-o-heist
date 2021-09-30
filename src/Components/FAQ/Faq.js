@@ -76,7 +76,7 @@ const Faq = () => {
     ansFlag ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset';
  }, [ansFlag]);
   return (
-    <div className="faq_parent">
+    <div className="faq_parent" id="faq">
       
       <div className="faq_blur_bg">{bgCirclePos.map((obj, i) => {
         return (

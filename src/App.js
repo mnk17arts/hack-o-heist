@@ -7,6 +7,7 @@ import Tracks from "./Components/Tracks/Track";
 import Prizes from "./Components/Prizes/Prizes";
 import Sponsors from "./Components/Sponsors/Sponsor";
 import Navbar from "./Components/Home/Navbar";
+import Register from "./Components/Register/Register";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,7 @@ function App() {
       <Schedule id="schedule" />
       <Sponsors id="sponsors" />
       <Faq id="faq" />
+      <Register/>
     </div>
   );
 }

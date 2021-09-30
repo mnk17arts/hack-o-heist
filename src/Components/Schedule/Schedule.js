@@ -22,7 +22,7 @@ const Planx = props => {
 
 const Schedule = () => {
   return (
-    <div className="s_parent">
+    <div className="s_parent" id="schedule">
       <div className="s_me">
         <div className="s_big_child">
           <img src={tl} alt="" style={{ width: "25%" }} />

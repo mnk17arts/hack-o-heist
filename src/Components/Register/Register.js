@@ -9,7 +9,7 @@ function Register() {
 
 
     return (
-  <div className="ABC">
+  <div className="ABC" id="register">
             <div className="heading">
                 Did you Register?
                 <br />

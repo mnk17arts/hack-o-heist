@@ -50,7 +50,6 @@
     rgba(0, 0, 0, 0.74),
     rgba(22, 1, 1, 0.767)
   );
-  color: #bf0404;
   text-shadow: 0.4rem 1rem 0.1rem rgba(255, 255, 255, 0.048);
 }
 .Trackx .track_box .box_body .Agriculture,
@@ -70,7 +69,7 @@
   margin: auto;
 }
 
-.Trackx .Tracks > p  {
+.Trackx .Tracks > p {
   border-bottom: 5px solid var(--x-red);
   font-family: PurplePurse;
   font-style: normal;

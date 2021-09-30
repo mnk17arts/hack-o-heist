@@ -14,6 +14,26 @@
   filter: drop-shadow(0px 0px 10px whitesmoke);
 }
 
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: 0.5s ease all;
+  display: none;
+  z-index: 110;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .list {
   display: flex;
   flex-direction: row;
@@ -57,11 +77,13 @@
 @media (max-width: 768px) {
   .navbar {
     padding: 7px 0px;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 20px;
   }
+
   .list ul li {
     padding: 0px;
   }
@@ -78,16 +100,83 @@
   }
 }
 
-/* .list ul li span.borderRed .list ul li a::before{
+@media (max-width: 550px) {
+  .burger {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    right: 20px;
+    top: 30px;
+    z-index: 102;
+  }
+
+  .list {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
     right: 0;
+    bottom: 0%;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.26);
+    height: 100vh;
+    padding: 100px 0px;
+    z-index: 50;
+    backdrop-filter: blur(1rem);
+    transform: translateX(100%) translateY(-10px);
+    transition: 0.5s ease-in;
+  }
+
+  .toggleSidebar {
+    transform: translateX(0%) translateY(-10px);
+  }
+
+  .list ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .list ul li {
+    padding: 0px 30px;
+    font-size: bold;
+    font-weight: 700;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+  }
+  .list ul li a {
+    text-decoration: none;
+    list-style: none;
+  }
+  .list ul li span {
+    padding: 2px;
+    font-size: 1.2 rem;
+    color: white;
+    position: relative;
+    transition: all 300ms ease-in-out;
+    border-bottom: 3px solid transparent !important;
+  }
+  .list ul li span.borderRed {
+    border-bottom: 3px solid red !important;
+    filter: drop-shadow(0px 0px 10px whitesmoke);
+    transition: all 300ms ease-in-out;
+  }
+  .burger div {
+    width: 25px;
     height: 3px;
-    background-color: red;
-    transform: scaleX(0);
+    background-color: #fff;
+    margin: 5px;
+    transition: 0.5s ease all;
+    display: block;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
 }
-.list ul li span.borderRed .list ul li a:hover::before,
-.list ul li span.borderRed .list ul li a:focus::before{
-    transform: scaleX(1);
-} */

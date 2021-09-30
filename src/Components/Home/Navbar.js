@@ -12,6 +12,12 @@ export default function Navbar() {
   const [border5, setBorder5] = useState(false);
   const [border6, setBorder6] = useState(false);
 
+  const [sideBar, setSideBar] = useState(false)
+
+  const setsideBar = () =>{
+    return sideBar ? setSideBar(false) : setSideBar(true)
+  }
+
   const showBorder1 = () => {
     setBorder2(false);
     setBorder3(false);
@@ -65,7 +71,7 @@ export default function Navbar() {
     <div className="navbar">
       <img src={logo} alt="logo" className="logo" />
 
-      <div className="list">
+      <div className={sideBar ? "toggleSidebar list" : "list"}>
         <ul>
           <li onClick={showBorder1}>
             <a href="#home">
@@ -99,6 +105,13 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+
+      <div class={sideBar ? "burger toggle" : "burger"} onClick={setsideBar}>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
     </div>
   );
 }

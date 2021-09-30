@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import "./track.css";
-import open from "./open.png";
-import healthcare from "./healthcare.png";
-import users from "./users.png";
-import edu from "./edu.png";
 import left from "./left.png";
 import Right from "./Right.png";
 import AOS from "aos";
+import PeopleIcon from '@mui/icons-material/People';
+import AgricultureIcon from '@mui/icons-material/Agriculture';
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import VpnLockIcon from '@mui/icons-material/VpnLock';
+import CropFreeIcon from '@mui/icons-material/CropFree';
 import "aos/dist/aos.css";
 
 const Track = () => {
@@ -24,7 +25,7 @@ const Track = () => {
         <div className="box_body">
           <div className="box Communication">
             <h2 data-aos="zoom-in" className="row-1">
-              <img src={users} className="users" alt="right" /> Communication
+              <PeopleIcon style={{color:"var(--x-red)", fontSize:"50px"}}/> Communication
             </h2>
             <p data-aos="zoom-in">
               To drive the innovation in communication technology design devices
@@ -35,7 +36,7 @@ const Track = () => {
           </div>
           <div className="box Agriculture">
             <h2 data-aos="zoom-in" className="row-1">
-              <img src={edu} className="edu" alt="edu" /> Agriculture
+              <AgricultureIcon style={{color:"var(--x-red)", fontSize:"50px"}}/> Agriculture
             </h2>
             <p data-aos="zoom-in">
               With India’s expanding population, global climate change and the
@@ -46,7 +47,7 @@ const Track = () => {
           </div>
           <div className="box Healthcare">
             <h2 data-aos="zoom-in" className="row-1">
-              <img src={healthcare} className="healthcare" alt="healthcare" />{" "}
+              <HealthAndSafetyIcon style={{color:"var(--x-red)", fontSize:"50px"}}/>{" "}
               Healthcare
             </h2>
             <p data-aos="zoom-in">
@@ -59,8 +60,7 @@ const Track = () => {
 
           <div className="box Defence">
             <h2 data-aos="zoom-in" className="row-1">
-              <img src={healthcare} className="healthcare" alt="Defence" />{" "}
-              Defence
+              <VpnLockIcon style={{color:"var(--x-red)", fontSize:"50px"}}/>{" "}Defence
             </h2>
             <p data-aos="zoom-in">
               Awareness of the operational situation, both for friendly and
@@ -73,7 +73,7 @@ const Track = () => {
 
           <div className="box Open">
             <h2 data-aos="zoom-in" className="row-1">
-              <img src={open} className="open" alt="open" /> Open Innovation
+              <CropFreeIcon style={{color:"var(--x-red)", fontSize:"50px"}}/> Open Innovation
             </h2>
             <p data-aos="zoom-in">
               Have ideas that do not fall into any of the above tracks? Worry

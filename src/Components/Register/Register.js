@@ -49,9 +49,9 @@ function Register() {
           <ul>
             <li>Shivam Tyagi- 8102323657</li>
             <li>Mohd Zubair - 8102499134</li>
-            <li>Pawan Singh - 810XXXXXXX</li>
-            <li>Shashwat Awasthi - XXXXXX9134</li>
-            <li>Shivam Kumar - XXXXXXX657</li>
+            <li>Pawan Singh - 8707880499</li>
+            <li>Shashwat Awasthi - 7394888169</li>
+            <li>Shivam Kumar - 6203886702</li>
           </ul>
         </div>
       </div>

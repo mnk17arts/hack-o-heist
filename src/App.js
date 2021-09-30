@@ -11,14 +11,14 @@ import Navbar from "./Components/Home/Navbar";
 import Register from "./Components/Register/Register";
 import Loader from "./Components/Loader/Loader";
 function App() {
-
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 5000)
-  }, [])
-  return (
-    loading ? <Loader/> :
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
+  return loading ? (
+    <Loader />
+  ) : (
     <div className="App">
       <Navbar />
       <Home />

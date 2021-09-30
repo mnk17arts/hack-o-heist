@@ -108,6 +108,7 @@
     width: 100vw;
     float: right;
     opacity: 50%;
+    display: none;
   }
   .material {
     color: antiquewhite;

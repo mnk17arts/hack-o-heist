@@ -3,7 +3,9 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: black;
+  box-sizing: content-box;
 }
 .Nairobi {
   max-height: 65vh;
@@ -12,17 +14,9 @@
   right: 0;
   z-index: 1;
 }
-.Dalli {
-  max-width: 30vh;
-  position: absolute center;
-  margin-top: 18vh;
-  z-index: 1;
-  /* opacity: 0.7; */
-}
 
 .wave {
   z-index: 1;
-  /* background-color: rgb(61, 204, 5); */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -30,51 +24,61 @@
   z-index: 2;
   width: 100%;
 }
-.RClogo {
-  width: 300px;
-  filter: drop-shadow(0px 0px 10px whitesmoke);
-  position: absolute;
-  bottom: 30%;
-  left: 5%;
-  z-index: 3;
-}
-.Text {
-  width: 300px;
-  color: rgb(255, 255, 255);
-  font-size: medium;
-  font-weight: bold;
-  font-family: "Playfair Display", serif;
-  position: absolute;
-  bottom: 2vh;
-  left: 5%;
-  z-index: 3;
-}
-
-.Contact {
-  width: 300px;
-  color: rgb(255, 255, 255);
-  font-size: medium;
-  font-weight: bold;
-  font-family: "Playfair Display", serif;
-  position: absolute;
-  bottom: 15vh;
-  right: 5%;
-  z-index: 3;
-}
 
 .heading {
   color: rgb(255, 255, 255);
-  font-size: xx-large;
   font-weight: bold;
-  font-family: "Playfair Display", serif;
+  text-align: left;
+  padding: 150px 0px 0px 50px;
+  box-sizing: content-box;
+}
+.heading p {
+  font-family: PurplePurse;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: var(--x-heading-size);
+  line-height: 90px;
+  color: #ffffff;
+  max-width: max-content;
+  text-shadow: 0.4rem 1rem 0.1rem rgba(0, 0, 0, 0.25);
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 30px;
   position: absolute;
-  top: 5%;
-  left: 10%;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  width: 100vw;
+  max-height: 100vh;
+}
+
+.footerContent .left {
+  width: 500px;
+  color: white;
+}
+
+.footerContent .left .RClogo {
+  width: 300px;
+  object-fit: contain;
+}
+
+.footerContent .right {
+  color: #fff;
+}
+.footerContent .right ul {
+  color: #fff;
+  text-align: left;
+  list-style: none;
 }
 #button {
   margin-top: 15px;
-  /* max-width: fit-content; */
-  border: 2px solid white;
+  border: 2px solid transparent;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -82,113 +86,168 @@
   font-size: 20px;
   transition: all 0.3s linear;
   padding-block: 0.3em;
-  background: rgb(154, 154, 154);
-  background: linear-gradient(
-    90deg,
-    rgba(204, 95, 95, 0.911) 0%,
-    rgba(194, 0, 0, 0.8995973389355743) 100%
-  );
-
+  background-color: var(--x-red);
   color: white;
   min-width: 12em;
 }
 #button:hover {
   opacity: 0.8;
 }
+
 @media (max-width: 1024px) {
+  .ABC {
+    min-height: 50vh;
+  }
+
   .Nairobi {
     max-height: 40vh;
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     right: 0;
     z-index: 1;
-  }
-  .RClogo {
-    width: 200px;
-    left: 40px;
-    bottom: 20%;
-  }
-  .Contact {
-    bottom: 7vh;
-    right: 5%;
-  }
-  .Text {
-    width: 200px;
-    bottom: 2vh;
-    left: 5%;
   }
 }
 
 @media (max-width: 768px) {
   .ABC {
     display: flex;
+    min-height: 50vh;
+    max-height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .heading {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: left;
+    padding: 0;
+    transform: translateY(-200px);
+    box-sizing: content-box;
+    padding-left: 50px;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100vw;
+    max-height: 100vh;
+  }
+  .Nairobi {
+    max-height: 40vh;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    z-index: 1;
+  }
+
+  .footerContent .left {
+    width: 45vw;
+    color: white;
+  }
+
+  .footerContent .left .RClogo {
+    width: 250px;
+    object-fit: contain;
+  }
+
+  .footerContent .right {
+    color: #fff;
+    width: 45vw;
+    align-items: center;
+    text-align: center;
+  }
+  .footerContent .right ul li {
+    color: #fff;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 550px) {
+  .ABC {
+    display: flex;
+    min-height: 120vh;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
   }
   .heading {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 95%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    z-index: 5;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    transform: translateY(-250px);
+    box-sizing: content-box;
   }
+  #button {
+    margin: auto;
+  }
+
+  .footerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100vw;
+    max-height: 100vh;
+  }
+  .Nairobi {
+    max-height: 29vh;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    z-index: 1;
+    display: none;
+  }
+
+  .footerContent .left {
+    width: 100vw;
+    color: white;
+  }
+
+  .footerContent .left .RClogo {
+    width: 250px;
+    object-fit: contain;
+  }
+
+  .footerContent .right {
+    color: #fff;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footerContent .right ul li {
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    transform: translateX(-20px);
+  }
+}
+
+@media (max-height: 600px) {
+  .ABC {
+    min-height: 120vh;
+  }
+
   .Nairobi {
     max-height: 50vh;
     position: absolute;
-    bottom: 40%;
+    bottom: 35%;
     right: 0;
     z-index: 1;
-    opacity: 0;
-  }
-  .Dalli {
-    display: none;
-    /* opacity: 0.7; */
-  }
-  .Text {
-    position: relative;
-    left: 0;
-  }
-  /* .RClogo {
-    width: 10px;
-    left: 4px;
-    bottom: 20%;
-  }
-  .Contact {
-    right: 0;
-    bottom: 0;
-  }
-  .Text {
-    width: 150px;
-    bottom: 0;
-    left: 0;
-  } */
-  .Contact {
-    width: 95%;
-    position: relative;
-  }
-  .RClogo {
-    position: relative;
-    left: 0;
-  }
-}
-@media (max-width: 414 px) {
-  .RClogo {
-    width: 10px;
-    left: 0;
-    bottom: 80%;
-  }
-  .Contact {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  .Text {
-    width: 150px;
-    bottom: 0;
-    left: 0;
   }
 }

@@ -1,10 +1,23 @@
 import { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "./img/robotics-logo.png";
-export default function Navbar() {
+export default function Navbar(props) {
   useEffect(() => {
     setBorder1(true);
-  }, []);
+    if (props.active === 0) {
+      showBorder1(true);
+    } else if (props.active === 1) {
+      showBorder2(true);
+    } else if (props.active === 2) {
+      showBorder3(true);
+    } else if (props.active === 3) {
+      showBorder4(true);
+    } else if (props.active === 4) {
+      showBorder5(true);
+    } else if (props.active === 5) {
+      showBorder6(true);
+    }
+  }, [props.active]);
   const [border1, setBorder1] = useState(false);
   const [border2, setBorder2] = useState(false);
   const [border3, setBorder3] = useState(false);
@@ -12,11 +25,11 @@ export default function Navbar() {
   const [border5, setBorder5] = useState(false);
   const [border6, setBorder6] = useState(false);
 
-  const [sideBar, setSideBar] = useState(false)
+  const [sideBar, setSideBar] = useState(false);
 
-  const setsideBar = () =>{
-    return sideBar ? setSideBar(false) : setSideBar(true)
-  }
+  const setsideBar = () => {
+    return sideBar ? setSideBar(false) : setSideBar(true);
+  };
 
   const showBorder1 = () => {
     setBorder2(false);
@@ -107,11 +120,10 @@ export default function Navbar() {
       </div>
 
       <div class={sideBar ? "burger toggle" : "burger"} onClick={setsideBar}>
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </div>
   );
 }

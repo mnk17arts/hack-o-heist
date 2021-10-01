@@ -8,6 +8,7 @@ import Sponsors from "./Components/Sponsors/Sponsor";
 import Navbar from "./Components/Home/Navbar";
 import Register from "./Components/Register/Register";
 import React from "react";
+import discord from "./Components/Home/img/discordapp.svg";
 const Home = React.lazy(() => import("./Components/Home/Home"));
 
 function App() {
@@ -34,6 +35,11 @@ function App() {
       <Sponsors />
       <Faq />
       <Register />
+      <div className="discordCont">
+        <a href="https://discord.gg/pUEYdUUu" target="_blank" rel="noreferrer">
+          <img src={discord} alt="Discord" />
+        </a>
+      </div>
     </div>
   );
 }

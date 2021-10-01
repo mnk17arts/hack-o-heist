@@ -77,7 +77,13 @@ const faqQns = [
       "There are many surprise sub-events and prizes too!",
     ],
   },
-  
+  {
+    id: 7,
+    q: "Is it necessary to develop a Hardware-based project for the final event?",
+    a: [
+      "No not at all, Hardware and Simulation-based projects built on Webots, Gazebo, tinker cad, etc all are accepted and warmly welcomed. ",
+    ],
+  },
 ];
 const Faq = () => {
   const [qid, setQid] = useState(0);

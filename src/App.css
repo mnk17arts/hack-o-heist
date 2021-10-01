@@ -17,7 +17,44 @@
 .App-link {
   color: #61dafb;
 }
-
+.discordCont {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  animation: comein 2s linear;
+}
+@keyframes comein {
+  0% {
+    bottom: -200px;
+  }
+  20% {
+    bottom: 10px;
+  }
+  30% {
+    right: 12px;
+  }
+  40% {
+    right: 7px;
+  }
+  50% {
+    right: 12px;
+  }
+  60% {
+    right: 12px;
+  }
+  70% {
+    right: 7px;
+  }
+  80% {
+    right: 12px;
+  }
+  90% {
+    right: 7px;
+  }
+  100% {
+    right: 10px;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

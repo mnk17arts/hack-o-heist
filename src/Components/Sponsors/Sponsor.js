@@ -3,9 +3,11 @@ import "./sponsors.css";
 import mask from "./spimg/mask.png";
 import bitd from "./spimg/bitd.png";
 import wolfram from "./spimg/wolfram.png";
-import jetbrains from "./spimg/jetbrains.png";
+import gfg from "./spimg/gfg.svg";
 import elastic from "./spimg/elastic.png";
 import gmc from "./spimg/gmc.png";
+import hover from "./spimg/hover.png";
+import mentorx from "./spimg/mentorx.png";
 import rtist_logo from "./spimg/rtist-logo.png";
 const spox_data = [
   {
@@ -16,8 +18,8 @@ const spox_data = [
   },
   {
     id: 2,
-    s_name: "Jet Brains",
-    s_logo: jetbrains,
+    s_name: "GeeksforGeeks",
+    s_logo: gfg,
     s_info: "SRH needs 68 runs in 58 balls to win",
   },
   {
@@ -32,18 +34,24 @@ const spox_data = [
     s_logo: gmc,
     s_info: "SRH needs 68 runs in 58 balls to win",
   },
+  {
+    id: 5,
+    s_name: "Hover Robotix",
+    s_logo: hover,
+    s_info: "SRH needs 68 runs in 58 balls to win",
+  },
+  {
+    id: 6,
+    s_name: "MentorX",
+    s_logo: mentorx,
+    s_info: "SRH needs 68 runs in 58 balls to win",
+  },
 ];
 const spoc_data = [
   {
     id: 1,
     s_name: "R-Tist NIT Jalandhar",
     s_logo: rtist_logo,
-    s_info: "SRH needs 68 runs in 58 balls to win",
-  },
-  {
-    id: 2,
-    s_name: "IEEE BIT Deoghar",
-    s_logo: bitd,
     s_info: "SRH needs 68 runs in 58 balls to win",
   },
   {
@@ -184,34 +192,15 @@ const Sponsors = () => {
           />
           <div className="sp_child_fav_bag">
             {spoc_data.map((_, i) => {
-              if (i === 0 || i % 3 === 0) {
-                return (
-                  <div className="sp_child_fav_bag_zip_even">
-                    <Sponsor
-                      imgurl={spoc_data[i].s_logo}
-                      s_name={spoc_data[i].s_name}
-                      s_info={spoc_data[i].s_info}
-                    />
-                  </div>
-                );
-              } else if (i % 3 === 1) {
-                return (
-                  <div className="sp_child_fav_bag_zip_odd">
-                    <Sponsor
-                      imgurl={spoc_data[i].s_logo}
-                      s_name={spoc_data[i].s_name}
-                      s_info={spoc_data[i].s_info}
-                    />
-                    <Sponsor
-                      imgurl={spoc_data[i + 1].s_logo}
-                      s_name={spoc_data[i + 1].s_name}
-                      s_info={spoc_data[i + 1].s_info}
-                    />
-                  </div>
-                );
-              } else {
-                return <> </>;
-              }
+              return (
+                <div className="sp_child_fav_bag_zip_even">
+                  <Sponsor
+                    imgurl={spoc_data[i].s_logo}
+                    s_name={spoc_data[i].s_name}
+                    s_info={spoc_data[i].s_info}
+                  />
+                </div>
+              );
             })}
           </div>
           <img
